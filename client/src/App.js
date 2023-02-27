@@ -1,7 +1,18 @@
+import { Navbar, Services, Welcome, Footer, Transactions } from './components';
 import './App.css';
 
 const App = () => {
-  return <></>;
+  return (
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
